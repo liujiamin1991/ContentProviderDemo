@@ -1,0 +1,18 @@
+<manifest package="com.example.contentproviderdemo"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <provider
+            android:authorities="org.crazyit.provides.dictprovider"
+            android:name="com.example.contentproviderdemo.DictProvider"
+            android:exported="true"/>
+
+    </application>
+
+</manifest>
