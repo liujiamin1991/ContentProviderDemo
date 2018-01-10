@@ -13,8 +13,6 @@ public class MyDatabaseHelper extends SQLiteOpenHelper
 {
     public static final String TAG = "MyDatabaseHelper";
 
-    final String CREATE_TABLE_SQL = "create table dict(_id integer primary " + "key autoincrement , word text , detail text)";
-
     public MyDatabaseHelper(Context context,  SQLiteDatabase.CursorFactory factory, int version)
     {
         super(context, Words.Word.DB_NAME, factory, version);
